@@ -139,7 +139,7 @@ namespace Vaccine
             {
                 string message = "Successfull operation";
                 MessageBox.Show(message);
-                Form3 form3 = new Form3();
+                Form3 form3 = new Form3(int.Parse(textBox4.Text),textBox1.Text,textBox2.Text,textBox3.Text);
                 form3.ShowDialog();
             }
             else
@@ -147,6 +147,12 @@ namespace Vaccine
                 string message = "Wrong input";
                 MessageBox.Show(message);
             }
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+           // Form3 form3 = new Form3(textBox4.Text);
 
         }
     }
